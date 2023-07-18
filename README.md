@@ -86,7 +86,7 @@ http://localhost:3000/
 
 ```bash
 # unit tests
-$ yarn run test
+$ yarn test # if you don't have yarn use `npm run test`
 
 ```
 

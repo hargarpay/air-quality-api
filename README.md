@@ -39,7 +39,7 @@ git clone https://github.com/hargarpay/air-quality-api.git
 2 - Install the dependencies:
 ```bash
 cd air-quality-api
-npm install
+yarn install # if you don't have yarn use `npm install`
 ```
 
 3 - Create a .env file based on the .env.example file and set the appropriate environment variables:
@@ -55,7 +55,7 @@ you can create your IQAir credentials from here [IQAir](https://www.iqair.com/da
 
 4 - Start the server:
 ```bash
-npm run start:dev
+yarn start:dev # if you don't have yarn use `npm run start:dev`
 ```
 
 ## Docker Start Up
@@ -80,25 +80,7 @@ Swagger UI Documentation
 ```bash
 http://localhost:3000/
 ```
-## Test
 
-```bash
-# unit tests
-$ npm run test
-```
-
-## Running the app
-
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
 
 ## Test
 
@@ -106,11 +88,6 @@ $ yarn run start:prod
 # unit tests
 $ yarn run test
 
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
 ```
 
 ## Support

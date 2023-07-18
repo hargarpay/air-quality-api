@@ -60,7 +60,7 @@ yarn start:dev # if you don't have yarn use `npm run start:dev`
 
 ## Docker Start Up
 
-Alternatively, you can use Docker Compose to run the Atmosphere API. Simply run:
+Alternatively, you can use Docker Compose to run the Air Quality API. Simply run:
 ```bash
 docker-compose up
 ```

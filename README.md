@@ -26,10 +26,65 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
 ## Installation
 
+To install the Air Quality API, follow these steps:
+
+1 - Clone the repository:
 ```bash
-$ yarn install
+git clone https://github.com/hargarpay/air-quality-api.git
+```
+
+2 - Install the dependencies:
+```bash
+cd air-quality-api
+npm install
+```
+
+3 - Create a .env file based on the .env.example file and set the appropriate environment variables:
+```bash
+MONGO_HOST=mongodb://localhost:27017/iqAir # use `mongodb://db:27017/iqAir` if docker compose is used
+IQAIR_API_KEY=your_iqair_api_key_here
+IQAIR_BASEURL=https://api.airvisual.com
+PARIS_ZONE_LONGITUDE=2.352222 # This can be optional if the value is 2.352222 
+PARIS_ZONE_LATITUDE=48.856613 # This can be optional if the value is 48.856613
+```
+
+you can create your IQAir credentials from here [IQAir](https://www.iqair.com/dashboard/api)
+
+4 - Start the server:
+```bash
+npm run start:dev
+```
+
+## Docker Start Up
+
+Alternatively, you can use Docker Compose to run the Atmosphere API. Simply run:
+```bash
+docker-compose up
+```
+
+
+You can use the below to connect to compass mongodb client to check the data
+```bash
+COMPASS_CONNECTION_FOR_DOCKER=mongodb://localhost:27019/iqAir 
+```
+
+
+
+## Usage
+
+This Api supports OpenAPI/Swagger documentation, you can visit the baseUrl and it will show up 
+Swagger UI Documentation
+```bash
+http://localhost:3000/
+```
+## Test
+
+```bash
+# unit tests
+$ npm run test
 ```
 
 ## Running the app
